@@ -3,7 +3,12 @@ guid: 94f7ffcc6489c4c40a4cce0e5e9b4dff
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_DeadBodyCovered
+    second: {fileID: 2100000, guid: 055ce1ab16ef57041a528dd2adba0901, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
