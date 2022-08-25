@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.041089043, g: 0.07253327, b: 0.12543517, a: 1}
+  m_IndirectSpecularColor: {r: 0.040679544, g: 0.07354141, b: 0.1252535, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2582,7 +2582,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.9528302, g: 0.7156382, b: 0.28315237, a: 1}
-  m_Intensity: 1.25
+  m_Intensity: 3
   m_Range: 10
   m_SpotAngle: 160
   m_InnerSpotAngle: 21.80208
@@ -3472,7 +3472,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1181066845
 Transform:
   m_ObjectHideFlags: 0
@@ -3890,7 +3890,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1380536321
 Transform:
   m_ObjectHideFlags: 0
@@ -4469,13 +4469,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1553637774}
-  m_LocalRotation: {x: 0.8385443, y: -0.08263356, z: 0.17091829, w: 0.5106879}
-  m_LocalPosition: {x: 2.369999, y: 1.87, z: 7.459999}
+  m_LocalRotation: {x: -0.017378407, y: 0.51568705, z: -0.85657734, w: -0.0063364846}
+  m_LocalPosition: {x: -0.65, y: 1.87, z: 6.13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1464665009}
   m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 62.217003, y: 154.28601, z: 175.572}
+  m_LocalEulerAnglesHint: {x: 62.089005, y: 362.845, z: 180.86499}
 --- !u!95 &1553637776
 Animator:
   serializedVersion: 3
@@ -4507,9 +4507,9 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.9528302, g: 0.7156382, b: 0.28315237, a: 1}
-  m_Intensity: 1.25
+  m_Intensity: 2
   m_Range: 10
-  m_SpotAngle: 160
+  m_SpotAngle: 135
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
@@ -7218,6 +7218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 901182334643ba1438a25accc6bd0c79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInput: {fileID: 0}
 --- !u!224 &3943101702451793383
 RectTransform:
   m_ObjectHideFlags: 0
