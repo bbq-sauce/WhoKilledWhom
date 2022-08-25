@@ -4,10 +4,14 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class DoorScript : MonoBehaviour
 {
-    public void Load_Next_Scene(Collider other)
+    void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene(2);
-    }
+        if(other.gameObject.tag == "Player")
+        {
+            SceneManager.LoadScene(2);
+        }
+    }    
 }
+
 
 
