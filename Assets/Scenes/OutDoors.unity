@@ -5493,7 +5493,7 @@ Light:
   m_Color: {r: 0.9528302, g: 0.7156382, b: 0.28315237, a: 1}
   m_Intensity: 1.25
   m_Range: 10
-  m_SpotAngle: 145
+  m_SpotAngle: 160
   m_InnerSpotAngle: 1
   m_CookieSize: 10
   m_Shadows:
@@ -6090,8 +6090,8 @@ Light:
   m_Color: {r: 0.9528302, g: 0.7156382, b: 0.28315237, a: 1}
   m_Intensity: 1.25
   m_Range: 10
-  m_SpotAngle: 145
-  m_InnerSpotAngle: 14
+  m_SpotAngle: 160
+  m_InnerSpotAngle: 1
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -11088,7 +11088,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4423045619506704322}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0.4863189, y: 1.2753145, z: 0.036416028}
+  m_LocalPosition: {x: 0.4863189, y: 1.2753145, z: 0.119}
   m_LocalScale: {x: 60.000004, y: 2.5114303, z: 30.000002}
   m_Children: []
   m_Father: {fileID: 543450652271106122}
@@ -11783,6 +11783,7 @@ GameObject:
   - component: {fileID: 3724279353637035836}
   - component: {fileID: 3724279353637035837}
   - component: {fileID: 3634675753812714275}
+  - component: {fileID: 3724279353637035839}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -11790,6 +11791,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &3724279353637035839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3724279353637035838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f83396e2da186e542a4b8c2ad63c0379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!33 &3733392132174645841
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -11847,6 +11860,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 901182334643ba1438a25accc6bd0c79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInput: {fileID: 8269721918944945712}
 --- !u!23 &3891803669469988989
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12118,10 +12132,10 @@ GameObject:
   - component: {fileID: 5361293285370262674}
   - component: {fileID: 9077926074414268875}
   - component: {fileID: 4423045619506704323}
-  - component: {fileID: 4423045619506704327}
+  - component: {fileID: 4423045619506704324}
   m_Layer: 0
   m_Name: door
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -12137,9 +12151,9 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.016279664, y: 0.63283175, z: 0.078367546}
-  m_Center: {x: -0.008105434, y: -0.1673941, z: -0.0023462847}
---- !u!114 &4423045619506704327
+  m_Size: {x: 0.016279664, y: 0.3361025, z: 0.078367546}
+  m_Center: {x: -0.008105434, y: -0.120686695, z: -0.002346285}
+--- !u!114 &4423045619506704324
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12851,7 +12865,7 @@ MonoBehaviour:
   jump: 0
   sprint: 0
   analogMovement: 0
-  cursorLocked: 1
+  cursorLocked: 0
   cursorInputForLook: 1
 --- !u!114 &5733054407720907895
 MonoBehaviour:
@@ -12955,7 +12969,7 @@ GameObject:
   - component: {fileID: 5733054408019751464}
   m_Layer: 8
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -4,13 +4,15 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class DoorScript : MonoBehaviour
 {
+    public static bool isDoorTriggered = false;
     void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Player")
-        {
-            SceneManager.LoadScene(2);
-        }
-    }    
+        isDoorTriggered = !isDoorTriggered;       
+    }
+    // void OnTriggerExit(Collider other1)
+    // {
+    //     isDoorTriggered = false;       
+    // }    
 }
 
 
