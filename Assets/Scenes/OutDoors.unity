@@ -8421,7 +8421,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d501df4c5351e5249a8c6c33b331be06, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e53fbb52dd54d8843b4a778caeae55ae, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.213
   m_Pitch: 1
@@ -10041,7 +10041,7 @@ Terrain:
   serializedVersion: 6
   m_TerrainData: {fileID: 15600000, guid: d6a69fba373ed8441a22e788af479814, type: 2}
   m_TreeDistance: 528
-  m_TreeBillboardDistance: 5
+  m_TreeBillboardDistance: 137
   m_TreeCrossFadeLength: 2
   m_TreeMaximumFullLODCount: 50
   m_DetailObjectDistance: 0
