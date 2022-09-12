@@ -8,6 +8,7 @@ public class MobileInput : MonoBehaviour
 {
     public Animator showAnimator;
     public bool isShowing = false;
+    public int doorNum = 2;
     // public DoorScript doorScript;
     // Update is called once per frame
     void Update()
@@ -15,11 +16,14 @@ public class MobileInput : MonoBehaviour
         // all required touch behaviour in the "OutDoors" Scene
         if(SceneManager.GetActiveScene().buildIndex == 1)
         {
+            doorNum = 2;
             DoorTouch();
         }
         // all required touch behaviour in the "LivingRoom" Scene
         if(SceneManager.GetActiveScene().buildIndex == 2)
         {
+            doorNum = 3;
+            DoorTouch();
             LicenseViewTouch();
         }
         
@@ -29,11 +33,14 @@ public class MobileInput : MonoBehaviour
         // all required touch behaviour in the "OutDoors" Scene
         if(SceneManager.GetActiveScene().buildIndex == 1)
         {
+            doorNum = 2;
             DoorClick();
         }
         // all required touch behaviour in the "LivingRoom" Scene
         if(SceneManager.GetActiveScene().buildIndex == 2)
         {
+            doorNum = 3;
+            DoorClick();
             LicenseViewClick();
         }
         
@@ -54,7 +61,7 @@ public class MobileInput : MonoBehaviour
                 {
                     if(Vector3.Distance(hit.transform.gameObject.transform.position,this.transform.position) < 1.5f)
                     {
-                        SceneManager.LoadScene(2);
+                        SceneManager.LoadScene(doorNum);
                     }
                 }
             }
@@ -74,7 +81,7 @@ public class MobileInput : MonoBehaviour
                 {
                     if(Vector3.Distance(hit.transform.gameObject.transform.position,this.transform.position) < 1.5f)
                     {
-                        SceneManager.LoadScene(2);
+                        SceneManager.LoadScene(doorNum);
                     }
                 }
             }
