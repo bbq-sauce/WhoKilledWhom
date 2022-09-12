@@ -12,10 +12,12 @@ public class MobileInput : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // all required touch behaviour in the "OutDoors" Scene
         if(SceneManager.GetActiveScene().buildIndex == 1)
         {
             DoorTouch();
         }
+        // all required touch behaviour in the "LivingRoom" Scene
         if(SceneManager.GetActiveScene().buildIndex == 2)
         {
             LicenseViewTouch();
@@ -24,10 +26,12 @@ public class MobileInput : MonoBehaviour
 
 #if UNITY_EDITOR
 
+        // all required touch behaviour in the "OutDoors" Scene
         if(SceneManager.GetActiveScene().buildIndex == 1)
         {
             DoorClick();
         }
+        // all required touch behaviour in the "LivingRoom" Scene
         if(SceneManager.GetActiveScene().buildIndex == 2)
         {
             LicenseViewClick();
