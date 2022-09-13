@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Driving License
   m_EditorClassIdentifier: 
   id: 1
-  itemName: Drivers License
+  itemName: Driver's License
   value: 0
   icon: {fileID: 21300000, guid: b727070b85e0dbc4da6cf2e83ba00889, type: 3}
+  itemType: 0

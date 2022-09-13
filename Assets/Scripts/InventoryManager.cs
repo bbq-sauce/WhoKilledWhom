@@ -12,6 +12,7 @@ public class InventoryManager : MonoBehaviour
    public List<Item> items = new List<Item>();
    public Transform itemContent;
    public GameObject inventoryItem;
+   public InventoryItemController[] inventoryItems;
 
    void Awake()
    {
@@ -40,5 +41,16 @@ public class InventoryManager : MonoBehaviour
             itemName.text = item.itemName;
             itemIcon.sprite = item.icon;
         }
+        SetInventoryItems();
    }
+
+   public void SetInventoryItems()
+   {
+          inventoryItems = itemContent.GetComponentsInChildren<InventoryItemController>();
+          for (int i = 0; i < items.Count; i++)
+          {
+               inventoryItems[i].AddItem(items[i]);
+          }
+   }
+   
 }

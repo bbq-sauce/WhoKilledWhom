@@ -24,7 +24,7 @@ public class MobileInput : MonoBehaviour
         {
             doorNum = 3;
             DoorTouch();
-            LicenseViewTouch();
+            //LicenseViewTouch();
         }
         
 
@@ -41,7 +41,7 @@ public class MobileInput : MonoBehaviour
         {
             doorNum = 3;
             DoorClick();
-            LicenseViewClick();
+            //LicenseViewClick();
         }
         
         

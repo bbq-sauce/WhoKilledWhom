@@ -16,3 +16,4 @@ MonoBehaviour:
   itemName: Obituary
   value: 0
   icon: {fileID: 21300000, guid: 56be759cbce4f5846bbe7567917111e8, type: 3}
+  itemType: 1

@@ -10,6 +10,9 @@ TagManager:
   - FamilyPhoto
   - Obituary
   - Journel
+  - Animator
+  - Mobile
+  - MobileButton
   layers:
   - Default
   - TransparentFX
