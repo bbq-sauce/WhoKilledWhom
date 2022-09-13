@@ -6,6 +6,8 @@ using TMPro;
 
 public class InventoryManager : MonoBehaviour
 {
+   public AudioSource audioSource;
+   public AudioClip vibrateClip;
    public static InventoryManager instance;
    public List<Item> items = new List<Item>();
    public Transform itemContent;
@@ -19,6 +21,7 @@ public class InventoryManager : MonoBehaviour
    public void Add(Item item)
    {
         items.Add(item);
+        audioSource.PlayOneShot(vibrateClip);
    }
 
    public void ListItems()
