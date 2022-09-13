@@ -7,6 +7,7 @@ using TMPro;
 public class InventoryManager : MonoBehaviour
 {
    public AudioSource audioSource;
+   public int count = 0;
    public AudioClip vibrateClip;
    public static InventoryManager instance;
    public List<Item> items = new List<Item>();
@@ -25,23 +26,28 @@ public class InventoryManager : MonoBehaviour
         audioSource.PlayOneShot(vibrateClip);
    }
 
+   void Start()
+   {
+
+   }
+
    public void ListItems()
    {
-        foreach (Transform item in itemContent)
-        {
-            Destroy(item.gameObject);
-        }
+        
+     //    foreach (Transform item in itemContent)
+     //    {
+     //        Destroy(item.gameObject);
+     //    }
 
-        foreach (var item in items)
-        {
-            GameObject obj = Instantiate(inventoryItem, itemContent);
-            var itemName = obj.transform.Find("ItemName").GetComponent<TextMeshProUGUI>();
-            var itemIcon = obj.transform.Find("ItemIcon").GetComponent<Image>();
-
-            itemName.text = item.itemName;
-            itemIcon.sprite = item.icon;
-        }
-        SetInventoryItems();
+     //    foreach (var item in items)
+     //    {
+     //           GameObject obj = Instantiate(inventoryItem, itemContent);
+     //           var itemName = obj.transform.Find("ItemName").GetComponent<TextMeshProUGUI>();
+     //           var itemIcon = obj.transform.Find("ItemIcon").GetComponent<Image>();
+     //           itemName.text = item.itemName;
+     //           itemIcon.sprite = item.icon;   
+     //    }
+       
    }
 
    public void SetInventoryItems()

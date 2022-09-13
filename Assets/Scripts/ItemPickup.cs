@@ -7,6 +7,7 @@ public class ItemPickup : MonoBehaviour
     public GameObject player;
     public Item item;
     public string tagName;
+    public GameObject icon;
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -14,6 +15,7 @@ public class ItemPickup : MonoBehaviour
     void Pickup()
     {
         InventoryManager.instance.Add(item);
+        icon.SetActive(true);
         Destroy(gameObject);
     }
 

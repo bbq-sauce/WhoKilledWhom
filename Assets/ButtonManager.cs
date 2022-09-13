@@ -1,0 +1,45 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class ButtonManager : MonoBehaviour
+{
+    public Animator animator;
+    public GameObject mobileButton;
+    public Text buttonText;
+    public GameObject mobile;
+
+    
+    public void RemoveDL()
+    {
+        animator.SetTrigger("RemoveDL");
+        mobileButton.GetComponent<Button>().enabled = true;
+        mobileButton.GetComponent<Image>().enabled = true;
+        buttonText.enabled = true;
+    }
+
+    public void RemoveFamily()
+    {
+        animator.SetTrigger("RemoveFamily");
+        mobileButton.GetComponent<Button>().enabled = true;
+        mobileButton.GetComponent<Image>().enabled = true;
+        buttonText.enabled = true;
+    }
+
+    public void RemoveObituary()
+    {
+        animator.SetTrigger("RemoveObituary");
+        mobileButton.GetComponent<Button>().enabled = true;
+        mobileButton.GetComponent<Image>().enabled = true;
+        buttonText.enabled = true;
+    }
+
+    public void RemoveJournel()
+    {
+        animator.SetTrigger("RemoveJournel");
+        mobileButton.GetComponent<Button>().enabled = true;
+        mobileButton.GetComponent<Image>().enabled = true;
+        buttonText.enabled = true;
+    }
+}
