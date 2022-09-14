@@ -42,4 +42,12 @@ public class ButtonManager : MonoBehaviour
         mobileButton.GetComponent<Image>().enabled = true;
         buttonText.enabled = true;
     }
+
+    public void RemoveKnife()
+    {
+        animator.SetTrigger("RemoveKnife");
+        mobileButton.GetComponent<Button>().enabled = true;
+        mobileButton.GetComponent<Image>().enabled = true;
+        buttonText.enabled = true;
+    }
 }

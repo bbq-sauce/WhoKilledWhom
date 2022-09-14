@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 1545962772245709555}
   m_LocalRotation: {x: -0.00000013240823, y: 0.7071068, z: -0.7071068, w: -0.00000013240823}
   m_LocalPosition: {x: 20.667, y: 1.322, z: 26.241}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.05}
+  m_LocalScale: {x: 0.010000002, y: 0.009999999, z: 0.050000004}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -125,3 +125,4 @@ MonoBehaviour:
   player: {fileID: 0}
   item: {fileID: 11400000, guid: fa2191a347a155041952ec5c806553af, type: 2}
   tagName: FamilyPhoto
+  icon: {fileID: 0}

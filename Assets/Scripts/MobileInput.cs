@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class MobileInput : MonoBehaviour
 {
+    public GameObject mobile;
     public Animator showAnimator;
     public bool isShowing = false;
     public int doorNum = 2;
@@ -61,6 +62,8 @@ public class MobileInput : MonoBehaviour
                 {
                     if(Vector3.Distance(hit.transform.gameObject.transform.position,this.transform.position) < 1.5f)
                     {
+                        if(SceneManager.GetActiveScene().buildIndex == 2)
+                        mobile.SetActive(true);
                         SceneManager.LoadScene(doorNum);
                     }
                 }
@@ -81,6 +84,8 @@ public class MobileInput : MonoBehaviour
                 {
                     if(Vector3.Distance(hit.transform.gameObject.transform.position,this.transform.position) < 1.5f)
                     {
+                        if(SceneManager.GetActiveScene().buildIndex == 2)
+                        mobile.SetActive(true);
                         SceneManager.LoadScene(doorNum);
                     }
                 }

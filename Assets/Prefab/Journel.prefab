@@ -123,3 +123,4 @@ MonoBehaviour:
   player: {fileID: 0}
   item: {fileID: 11400000, guid: 846d693398c4f934db8d980d211e8926, type: 2}
   tagName: Journel
+  icon: {fileID: 0}

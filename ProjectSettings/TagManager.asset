@@ -13,6 +13,8 @@ TagManager:
   - Animator
   - Mobile
   - MobileButton
+  - Knife
+  - Content
   layers:
   - Default
   - TransparentFX

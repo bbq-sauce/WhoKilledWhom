@@ -16,6 +16,7 @@ public class Item : ScriptableObject
       DrivingLicense,
       Obituary,
       FamilyPhoto,
-      Journel
+      Journel,
+      Knife
    }
 }

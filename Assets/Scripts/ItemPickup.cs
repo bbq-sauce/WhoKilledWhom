@@ -30,7 +30,7 @@ public class ItemPickup : MonoBehaviour
             {
                 if((hit.collider != null) && hit.transform.gameObject.tag == tagName)
                 {
-                    if(Vector3.Distance(player.transform.position,transform.position) < 3f)
+                    // if(Vector3.Distance(player.transform.position,transform.position) < 5f)
                     {
                         Pickup();
                     }
