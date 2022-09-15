@@ -15,6 +15,7 @@ TagManager:
   - MobileButton
   - Knife
   - Content
+  - Key
   layers:
   - Default
   - TransparentFX

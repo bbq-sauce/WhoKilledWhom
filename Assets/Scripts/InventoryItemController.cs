@@ -72,6 +72,14 @@ public class InventoryItemController : MonoBehaviour
                 buttonText.enabled = false;
                 isShowing = !isShowing;
                 break;
+            case Item.ItemType.Key:
+                animator.SetTrigger("ShowKey");
+                mobile.SetActive(false);
+                mobileButton.GetComponent<Button>().enabled = false;
+                mobileButton.GetComponent<Image>().enabled = false;
+                buttonText.enabled = false;
+                isShowing = !isShowing;
+                break;
             
             
             default:

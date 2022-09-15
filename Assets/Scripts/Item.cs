@@ -17,6 +17,7 @@ public class Item : ScriptableObject
       Obituary,
       FamilyPhoto,
       Journel,
-      Knife
+      Knife,
+      Key
    }
 }

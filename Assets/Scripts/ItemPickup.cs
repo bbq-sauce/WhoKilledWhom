@@ -42,7 +42,7 @@ public class ItemPickup : MonoBehaviour
 #if UNITY_EDITOR
     void OnMouseDown()
     {
-        if(Vector3.Distance(player.transform.position,transform.position) < 3f)
+        // if(Vector3.Distance(player.transform.position,transform.position) < 3f)
         {
             Pickup();
         }
