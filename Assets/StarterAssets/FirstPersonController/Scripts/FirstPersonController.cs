@@ -59,6 +59,9 @@ namespace StarterAssets
 		private float _rotationVelocity;
 		private float _verticalVelocity;
 		private float _terminalVelocity = 53.0f;
+		public AudioSource audioSource;
+		public AudioClip[] footsteps;
+		private int footstepIndex = 1;
 
 		// timeout deltatime
 		private float _jumpTimeoutDelta;
@@ -174,6 +177,8 @@ namespace StarterAssets
 				// creates curved result rather than a linear one giving a more organic speed change
 				// note T in Lerp is clamped, so we don't need to clamp our speed
 				_speed = Mathf.Lerp(currentHorizontalSpeed, targetSpeed * inputMagnitude, Time.deltaTime * SpeedChangeRate);
+				
+				
 
 				// round speed to 3 decimal places
 				_speed = Mathf.Round(_speed * 1000f) / 1000f;
@@ -190,7 +195,35 @@ namespace StarterAssets
 			// if there is a move input rotate player when the player is moving
 			if (_input.move != Vector2.zero)
 			{
-				// move
+				// FootStep Audio Play while moving
+				try
+				{
+					if(_input.sprint)
+					{
+						audioSource.pitch = 1.75f;
+					}
+					else
+					{
+						audioSource.pitch = 1f;
+					}
+					if(!audioSource.isPlaying && Grounded)
+					{
+						audioSource.PlayOneShot(footsteps[footstepIndex]);
+						if(footstepIndex == 1)
+						{
+							footstepIndex = 2;
+						}
+						else if(footstepIndex == 2)
+						{
+							footstepIndex = 1;
+						}
+					}
+				}
+				catch
+				{
+					// Handled Null Exception
+				}
+				// Move
 				inputDirection = transform.right * _input.move.x + transform.forward * _input.move.y;
 			}
 
