@@ -8,6 +8,7 @@ public class InventoryManager : MonoBehaviour
 {
    public AudioSource audioSource;
    public int count = 0;
+   public static int itemCount = 0;
    public AudioClip vibrateClip;
    public static InventoryManager instance;
    public List<Item> items = new List<Item>();
@@ -24,6 +25,7 @@ public class InventoryManager : MonoBehaviour
    {
         items.Add(item);
         audioSource.PlayOneShot(vibrateClip);
+        itemCount++;
    }
 
    void Start()

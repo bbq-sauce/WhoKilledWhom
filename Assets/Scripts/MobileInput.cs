@@ -25,6 +25,7 @@ public class MobileInput : MonoBehaviour
         {
             doorNum = 3;
             DoorTouch();
+            
             //LicenseViewTouch();
         }
         
@@ -62,9 +63,22 @@ public class MobileInput : MonoBehaviour
                 {
                     if(Vector3.Distance(hit.transform.gameObject.transform.position,this.transform.position) < 1.5f)
                     {
-                        if(SceneManager.GetActiveScene().buildIndex == 2)
-                        mobile.SetActive(true);
-                        SceneManager.LoadScene(doorNum);
+                        if(SceneManager.GetActiveScene().buildIndex == 1)
+                        {
+                            SceneManager.LoadScene(doorNum);
+                        }
+                        if(SceneManager.GetActiveScene().buildIndex == 2 && InventoryManager.itemCount == 4)
+                        {
+                            mobile.SetActive(true);
+                            SceneManager.LoadScene(doorNum);
+                        }
+                        else
+                        {
+                            Debug.Log("Some items need to be found inorder to proceed!");
+                        }
+
+                        
+                        
                     }
                 }
             }
@@ -84,9 +98,19 @@ public class MobileInput : MonoBehaviour
                 {
                     if(Vector3.Distance(hit.transform.gameObject.transform.position,this.transform.position) < 1.5f)
                     {
-                        if(SceneManager.GetActiveScene().buildIndex == 2)
-                        mobile.SetActive(true);
-                        SceneManager.LoadScene(doorNum);
+                        if(SceneManager.GetActiveScene().buildIndex == 1)
+                        {
+                            SceneManager.LoadScene(doorNum);
+                        }
+                        if(SceneManager.GetActiveScene().buildIndex == 2 && InventoryManager.itemCount == 4)
+                        {
+                            mobile.SetActive(true);
+                            SceneManager.LoadScene(doorNum);
+                        }
+                        else
+                        {
+                             Debug.Log("Some items need to be found inorder to proceed!");
+                        }
                     }
                 }
             }
