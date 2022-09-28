@@ -2645,6 +2645,8 @@ MonoBehaviour:
   CinemachineCameraTarget: {fileID: 5242107653477441975}
   TopClamp: 89
   BottomClamp: -89
+  audioSource: {fileID: 0}
+  footsteps: []
 --- !u!1 &453084650744895724
 GameObject:
   m_ObjectHideFlags: 0
@@ -3337,7 +3339,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2329903055813860164}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.9, y: -5.116919, z: -14.68}
+  m_LocalPosition: {x: -9.9, y: -5.116919, z: -12.7}
   m_LocalScale: {x: 5.8791227, y: 5.8791227, z: 5.8791227}
   m_Children: []
   m_Father: {fileID: 0}
