@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class FlashLightLogic : MonoBehaviour
 {
+    public AudioSource audioSource;
+    public AudioClip iCanSeeU;
+    public bool isHorrorEventPlayed = false;
     public Light flashLight;
     public GameObject ghost;
     public Light horrorLight;
@@ -17,9 +20,10 @@ public class FlashLightLogic : MonoBehaviour
     void Update()
     {
         Dim();
-        if(flashLight.intensity <= 0)
+        if(flashLight.intensity <= 0 && !isHorrorEventPlayed)
         {
             HorrorEvent();
+            isHorrorEventPlayed = true;
         }
     }
 
@@ -39,7 +43,7 @@ public class FlashLightLogic : MonoBehaviour
     {
         horrorLight.enabled = true;
         ghost.transform.parent = null;
-        
+        audioSource.PlayOneShot(iCanSeeU);
         ghost.transform.Rotate(new Vector3(0,0,0));
     }
 }

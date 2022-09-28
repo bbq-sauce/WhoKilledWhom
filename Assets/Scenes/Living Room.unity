@@ -1890,7 +1890,7 @@ GameObject:
   - component: {fileID: 599125851}
   - component: {fileID: 599125850}
   m_Layer: 0
-  m_Name: AudioManager
+  m_Name: BGM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8172,6 +8172,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9f2b84d7bf1d404f973eef5f43ce98f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 1158411378}
+  iCanSeeU: {fileID: 8300000, guid: 0ad3634c5b1de3b458f836ca3eda61db, type: 3}
+  isHorrorEventPlayed: 0
   flashLight: {fileID: 1855325406}
   ghost: {fileID: 1687521941}
   horrorLight: {fileID: 226667141}
