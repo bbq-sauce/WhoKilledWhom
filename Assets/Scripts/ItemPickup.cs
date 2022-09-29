@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ItemPickup : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class ItemPickup : MonoBehaviour
     public Item item;
     public string tagName;
     public GameObject icon;
+    public GameObject inference;
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -16,6 +18,7 @@ public class ItemPickup : MonoBehaviour
     {
         InventoryManager.instance.Add(item);
         icon.SetActive(true);
+        inference.SetActive(true);
         Destroy(gameObject);
     }
 

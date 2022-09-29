@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class MobileInput : MonoBehaviour
 {
     public GameObject mobile;
+    public GameObject infPanel;
     public Animator showAnimator;
     public bool isShowing = false;
     public int doorNum = 2;
@@ -70,6 +71,7 @@ public class MobileInput : MonoBehaviour
                         if(SceneManager.GetActiveScene().buildIndex == 2 && InventoryManager.itemCount == 4)
                         {
                             mobile.SetActive(true);
+                            infPanel.SetActive(true);
                             SceneManager.LoadScene(doorNum);
                         }
                         else
@@ -105,6 +107,7 @@ public class MobileInput : MonoBehaviour
                         if(SceneManager.GetActiveScene().buildIndex == 2 && InventoryManager.itemCount == 4)
                         {
                             mobile.SetActive(true);
+                            infPanel.SetActive(true);
                             SceneManager.LoadScene(doorNum);
                         }
                         else

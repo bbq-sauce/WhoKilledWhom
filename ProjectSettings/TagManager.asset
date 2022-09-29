@@ -16,6 +16,8 @@ TagManager:
   - Knife
   - Content
   - Key
+  - InfContent
+  - InfPanel
   layers:
   - Default
   - TransparentFX
