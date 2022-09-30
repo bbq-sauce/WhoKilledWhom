@@ -18,6 +18,7 @@ TagManager:
   - Key
   - InfContent
   - InfPanel
+  - Ghost
   layers:
   - Default
   - TransparentFX

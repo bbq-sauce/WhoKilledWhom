@@ -86,7 +86,7 @@ public class MobileInput : MonoBehaviour
             }
         }
     }
-
+    // DoorClick only for the Unity editor event
     void DoorClick()
     {
         if(Input.GetMouseButtonDown(0))

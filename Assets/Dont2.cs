@@ -16,6 +16,7 @@ public class Dont2 : MonoBehaviour
         infPanel = GameObject.FindGameObjectWithTag("InfPanel");
         completionIndex++;
         gameObject.transform.parent = parentInfObject.transform;
+        gameObject.GetComponent<RectTransform>().localScale = new Vector3(1,1,1);
         if(completionIndex>=2)
         {
             infPanel.SetActive(false);
