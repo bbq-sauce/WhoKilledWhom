@@ -828,7 +828,7 @@ MeshRenderer:
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
+  m_ReflectionProbeUsage: 3
   m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
@@ -2841,7 +2841,7 @@ ReflectionProbe:
   m_Mode: 0
   m_RefreshMode: 0
   m_TimeSlicingMode: 0
-  m_Resolution: 128
+  m_Resolution: 2048
   m_UpdateFrequency: 0
   m_BoxSize: {x: 15, y: 10, z: 47.1}
   m_BoxOffset: {x: 0, y: 0, z: 0}
@@ -2868,13 +2868,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1908484923}
-  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: -0.16995656, y: 1.548059, z: 2.7796593}
+  m_LocalRotation: {x: -0, y: 0.14626527, z: -0, w: 0.9892454}
+  m_LocalPosition: {x: 0.067, y: 1.548059, z: 2.358}
   m_LocalScale: {x: 0.15883768, y: 0.15883768, z: 0.15883768}
   m_Children: []
   m_Father: {fileID: 997941038}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 16.821001, z: 0}
 --- !u!1 &2063268189
 GameObject:
   m_ObjectHideFlags: 0
