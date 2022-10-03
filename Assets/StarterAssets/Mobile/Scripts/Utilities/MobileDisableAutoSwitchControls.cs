@@ -27,7 +27,13 @@ public class MobileDisableAutoSwitchControls : MonoBehaviour
 
     void DisableAutoSwitchControls()
     {
+        try{
         playerInput.neverAutoSwitchControlSchemes = true;
+
+        }
+        catch{
+            
+        }
     }
 
 #endif

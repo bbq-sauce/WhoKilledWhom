@@ -11,6 +11,8 @@ public class MobileInput : MonoBehaviour
     public Animator showAnimator;
     public bool isShowing = false;
     public int doorNum = 2;
+    public Animator doorAnimator;
+    public bool isOpened = false;
     // public DoorScript doorScript;
     // Update is called once per frame
     void Update()
@@ -26,8 +28,11 @@ public class MobileInput : MonoBehaviour
         {
             doorNum = 3;
             DoorTouch();
-            
             //LicenseViewTouch();
+        }
+        if(SceneManager.GetActiveScene().buildIndex == 3)
+        {
+            DoorTouch();
         }
         
 
@@ -45,6 +50,10 @@ public class MobileInput : MonoBehaviour
             doorNum = 3;
             DoorClick();
             //LicenseViewClick();
+        }
+        if(SceneManager.GetActiveScene().buildIndex == 3)
+        {
+            DoorClick();
         }
         
         
@@ -74,11 +83,10 @@ public class MobileInput : MonoBehaviour
                             infPanel.SetActive(true);
                             SceneManager.LoadScene(doorNum);
                         }
-                        else
+                        else if(InventoryManager.itemCount < 4)
                         {
                             Debug.Log("Some items need to be found inorder to proceed!");
                         }
-
                         
                         
                     }
@@ -110,14 +118,20 @@ public class MobileInput : MonoBehaviour
                             infPanel.SetActive(true);
                             SceneManager.LoadScene(doorNum);
                         }
-                        else
+                        else if(InventoryManager.itemCount < 4)
                         {
-                             Debug.Log("Some items need to be found inorder to proceed!");
+                            Debug.Log("Some items need to be found inorder to proceed!");
                         }
+                    
                     }
                 }
             }
         }
+    }
+
+    void AnimatedDoorClick()
+    {
+        
     }
 
     void LicenseViewTouch()
