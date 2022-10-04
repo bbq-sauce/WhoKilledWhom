@@ -19,6 +19,11 @@ TagManager:
   - InfContent
   - InfPanel
   - Ghost
+  - BL
+  - BR
+  - CX
+  - TL
+  - TR
   layers:
   - Default
   - TransparentFX
