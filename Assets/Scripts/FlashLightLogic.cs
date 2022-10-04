@@ -10,6 +10,7 @@ public class FlashLightLogic : MonoBehaviour
     public Light flashLight;
     public GameObject ghost;
     public Light horrorLight;
+    public GameObject tracker;
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +44,7 @@ public class FlashLightLogic : MonoBehaviour
     {
         horrorLight.enabled = true;
         ghost.transform.parent = null;
+        //tracker.transform.parent = null;
         audioSource.PlayOneShot(iCanSeeU);
         ghost.transform.Rotate(new Vector3(0,0,0));
     }
