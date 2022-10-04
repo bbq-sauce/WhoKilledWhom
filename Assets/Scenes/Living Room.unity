@@ -38,8 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0040171784, g: 0.0002192626, b: 0.000000053028625,
-    a: 1}
+  m_IndirectSpecularColor: {r: 0.440772, g: 0.48945218, b: 0.5695725, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1245,13 +1244,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 208351734}
-  m_LocalRotation: {x: 0.7825062, y: -0.063081585, z: -0.2510141, w: -0.5663009}
+  m_LocalRotation: {x: 0.6621152, y: 0.42178187, z: -0.48675463, w: 0.38311023}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: -66.626, y: -125.893005, z: -207.88899}
+  m_LocalEulerAnglesHint: {x: 66.626, y: -125.893, z: -207.88899}
 --- !u!1 &226667140
 GameObject:
   m_ObjectHideFlags: 0
@@ -9291,7 +9290,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1814086530427091}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 17.636, y: 1.214, z: 18.641}
+  m_LocalPosition: {x: 17.636, y: 1.202, z: 18.641}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4972122607272201}
@@ -9959,6 +9958,8 @@ MonoBehaviour:
   showAnimator: {fileID: 124840965}
   isShowing: 0
   doorNum: 2
+  doorAnimator: {fileID: 0}
+  isOpened: 0
 --- !u!114 &861330916008515974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9977,6 +9978,7 @@ MonoBehaviour:
   flashLight: {fileID: 1855325406}
   ghost: {fileID: 1687521941}
   horrorLight: {fileID: 226667141}
+  tracker: {fileID: 0}
 --- !u!114 &861330916008515976
 MonoBehaviour:
   m_ObjectHideFlags: 0
