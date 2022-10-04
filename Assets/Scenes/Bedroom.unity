@@ -6291,6 +6291,7 @@ GameObject:
   - component: {fileID: 6084722308731726734}
   - component: {fileID: 8331069174475012897}
   - component: {fileID: 2097679608148384444}
+  - component: {fileID: 2389647510908097136}
   m_Layer: 0
   m_Name: Wall_Clear_long.001
   m_TagString: Untagged
@@ -6298,6 +6299,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
+--- !u!64 &2389647510908097136
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2389647510908097135}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5498012155450704800, guid: 6b93ccdd0d30bac4e840486fd4a2a2e8, type: 3}
 --- !u!4 &2413656510759516949
 Transform:
   m_ObjectHideFlags: 0
@@ -7288,6 +7303,7 @@ GameObject:
   - component: {fileID: 9190508023698238696}
   - component: {fileID: 673368290402094947}
   - component: {fileID: 6820413539271046241}
+  - component: {fileID: 3934453849428211085}
   m_Layer: 0
   m_Name: Wall_Clear_Short.003
   m_TagString: Untagged
@@ -7295,6 +7311,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
+--- !u!64 &3934453849428211085
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3934453849428211084}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6570463085568459921, guid: 6b93ccdd0d30bac4e840486fd4a2a2e8, type: 3}
 --- !u!33 &3961962229306151952
 MeshFilter:
   m_ObjectHideFlags: 0
