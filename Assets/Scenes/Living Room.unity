@@ -9291,7 +9291,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1814086530427091}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 17.636, y: 1.214, z: 18.641}
+  m_LocalPosition: {x: 17.636, y: 1.202, z: 18.641}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4972122607272201}
@@ -9959,6 +9959,8 @@ MonoBehaviour:
   showAnimator: {fileID: 124840965}
   isShowing: 0
   doorNum: 2
+  doorAnimator: {fileID: 0}
+  isOpened: 0
 --- !u!114 &861330916008515974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9977,6 +9979,7 @@ MonoBehaviour:
   flashLight: {fileID: 1855325406}
   ghost: {fileID: 1687521941}
   horrorLight: {fileID: 226667141}
+  tracker: {fileID: 0}
 --- !u!114 &861330916008515976
 MonoBehaviour:
   m_ObjectHideFlags: 0
