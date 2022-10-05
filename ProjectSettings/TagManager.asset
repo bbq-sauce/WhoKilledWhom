@@ -24,6 +24,7 @@ TagManager:
   - CX
   - TL
   - TR
+  - RotationTracker
   layers:
   - Default
   - TransparentFX

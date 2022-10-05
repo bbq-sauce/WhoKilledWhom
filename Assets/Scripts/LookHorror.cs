@@ -10,7 +10,7 @@ public class LookHorror : MonoBehaviour
     public bool isPlayed = false;
     public GameObject ghost;
     public GameObject playerTracker;
-    float desiredDuration = 10;
+    float desiredDuration = 5;
     float elapsedTime;  
     public float waitTime = 2; 
     bool hasSeen = false;
@@ -38,7 +38,6 @@ public class LookHorror : MonoBehaviour
                     StartCoroutine("UltimateScare");
                     isPlayed = !isPlayed;
                     hasSeen = true;
-                    playerTracker.transform.parent = null;
                 }
                 
             }
