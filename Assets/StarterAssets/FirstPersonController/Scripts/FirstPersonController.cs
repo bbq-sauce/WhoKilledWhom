@@ -206,7 +206,7 @@ namespace StarterAssets
 					{
 						audioSource.pitch = 1f;
 					}
-					if(!audioSource.isPlaying && Grounded)
+					if(!audioSource.isPlaying && Grounded && _controller.enabled)
 					{
 						audioSource.PlayOneShot(footsteps[footstepIndex]);
 						if(footstepIndex == 1)
