@@ -14,6 +14,9 @@ public class DrawerLogic : MonoBehaviour
     public bool isTLOpen = false;
     public Animator drawerTR;
     public bool isTROpen = false;
+    public AudioSource audioSource;
+    public AudioClip drawerOpen;
+    public AudioClip drawerClose;
     // Start is called before the first frame update
     void Start()
     {
@@ -53,11 +56,13 @@ public class DrawerLogic : MonoBehaviour
                     if(!isBLOpen)
                     {
                         drawerBL.SetTrigger("BLOpen");
+                        audioSource.PlayOneShot(drawerOpen);
                         isBLOpen = !isBLOpen;
                     }
                     else
                     {
                         drawerBL.SetTrigger("BLClose");
+                        audioSource.PlayOneShot(drawerClose);
                         isBLOpen = !isBLOpen;
                     }
                 }
@@ -79,11 +84,13 @@ public class DrawerLogic : MonoBehaviour
                     if(!isBLOpen)
                     {
                         drawerBL.SetTrigger("BLOpen");
+                        audioSource.PlayOneShot(drawerOpen);
                         isBLOpen = !isBLOpen;
                     }
                     else
                     {
                         drawerBL.SetTrigger("BLClose");
+                        audioSource.PlayOneShot(drawerClose);
                         isBLOpen = !isBLOpen;
                     }
                 }
@@ -105,11 +112,13 @@ public class DrawerLogic : MonoBehaviour
                     if(!isBROpen)
                     {
                         drawerBR.SetTrigger("BROpen");
+                        audioSource.PlayOneShot(drawerOpen);
                         isBROpen = !isBROpen;
                     }
                     else
                     {
                         drawerBR.SetTrigger("BRClose");
+                        audioSource.PlayOneShot(drawerClose);
                         isBROpen = !isBROpen;
                     }
                 }
@@ -130,11 +139,13 @@ public class DrawerLogic : MonoBehaviour
                     if(!isBROpen)
                     {
                         drawerBR.SetTrigger("BROpen");
+                        audioSource.PlayOneShot(drawerOpen);
                         isBROpen = !isBROpen;
                     }
                     else
                     {
                         drawerBR.SetTrigger("BRClose");
+                        audioSource.PlayOneShot(drawerClose);
                         isBROpen = !isBROpen;
                     }
                 }
@@ -155,11 +166,13 @@ public class DrawerLogic : MonoBehaviour
                     if(!isCXOpen)
                     {
                         drawerCX.SetTrigger("CXOpen");
+                        audioSource.PlayOneShot(drawerOpen);
                         isCXOpen = !isCXOpen;
                     }
                     else
                     {
                         drawerCX.SetTrigger("CXClose");
+                        audioSource.PlayOneShot(drawerClose);
                         isCXOpen = !isCXOpen;
                     }
                 }
@@ -180,11 +193,13 @@ public class DrawerLogic : MonoBehaviour
                     if(!isCXOpen)
                     {
                         drawerCX.SetTrigger("CXOpen");
+                        audioSource.PlayOneShot(drawerOpen);
                         isCXOpen = !isCXOpen;
                     }
                     else
                     {
                         drawerCX.SetTrigger("CXClose");
+                        audioSource.PlayOneShot(drawerClose);
                         isCXOpen = !isCXOpen;
                     }
                 }
@@ -205,11 +220,13 @@ public class DrawerLogic : MonoBehaviour
                     if(!isTLOpen)
                     {
                         drawerTL.SetTrigger("TLOpen");
+                        audioSource.PlayOneShot(drawerOpen);
                         isTLOpen = !isTLOpen;
                     }
                     else
                     {
                         drawerTL.SetTrigger("TLClose");
+                        audioSource.PlayOneShot(drawerClose);
                         isTLOpen = !isTLOpen;
                     }
                 }
@@ -230,11 +247,13 @@ public class DrawerLogic : MonoBehaviour
                     if(!isTLOpen)
                     {
                         drawerTL.SetTrigger("TLOpen");
+                        audioSource.PlayOneShot(drawerOpen);
                         isTLOpen = !isTLOpen;
                     }
                     else
                     {
                         drawerTL.SetTrigger("TLClose");
+                        audioSource.PlayOneShot(drawerClose);
                         isTLOpen = !isTLOpen;
                     }
                 }
@@ -255,11 +274,13 @@ public class DrawerLogic : MonoBehaviour
                     if(!isTROpen)
                     {
                         drawerTR.SetTrigger("TROpen");
+                        audioSource.PlayOneShot(drawerOpen);
                         isTROpen = !isTROpen;
                     }
                     else
                     {
                         drawerTR.SetTrigger("TRClose");
+                        audioSource.PlayOneShot(drawerClose);
                         isTROpen = !isTROpen;
                     }
                 }
@@ -280,11 +301,13 @@ public class DrawerLogic : MonoBehaviour
                     if(!isTROpen)
                     {
                         drawerTR.SetTrigger("TROpen");
+                        audioSource.PlayOneShot(drawerOpen);
                         isTROpen = !isTROpen;
                     }
                     else
                     {
                         drawerTR.SetTrigger("TRClose");
+                        audioSource.PlayOneShot(drawerClose);
                         isTROpen = !isTROpen;
                     }
                 }
