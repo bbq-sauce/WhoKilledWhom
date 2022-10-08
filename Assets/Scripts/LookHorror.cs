@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using StarterAssets;
 
 public class LookHorror : MonoBehaviour
-{
+{   
+    public GameObject player;
     public AudioSource audioSource;
     public AudioClip violinScare;
     public AudioClip ultimateClip;
@@ -14,6 +16,10 @@ public class LookHorror : MonoBehaviour
     float elapsedTime;  
     public float waitTime = 2; 
     bool hasSeen = false;
+    public Animator deadAnim;
+    public GameObject moveCanvas;
+    public GameObject mobileCanvas;
+    public GameObject buttons;
     // Start is called before the first frame update
     void Start()
     {
@@ -50,6 +56,11 @@ public class LookHorror : MonoBehaviour
                     elapsedTime += Time.deltaTime;
                     float percentageCompleted = elapsedTime/desiredDuration;
                     ghost.transform.position = Vector3.Lerp(ghost.transform.position,playerTracker.transform.position,percentageCompleted);
+                    player.GetComponent<FirstPersonController>().enabled = false;
+                    moveCanvas.SetActive(false);
+                    mobileCanvas.SetActive(false);
+                    deadAnim.SetTrigger("DeadAnim");
+                    buttons.SetActive(true);
                 }
                 
             }
@@ -69,7 +80,8 @@ public class LookHorror : MonoBehaviour
         yield return new WaitForSeconds(2);
         if(Vector3.Distance(ghost.transform.position,transform.position) < 15)
         {
-            ghost.transform.Translate(Vector3.forward); 
+            ghost.transform.Translate(Vector3.forward);
+            
         }
     }
 }
