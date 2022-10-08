@@ -17,7 +17,7 @@ public class Dont2 : MonoBehaviour
         completionIndex++;
         gameObject.transform.parent = parentInfObject.transform;
         gameObject.GetComponent<RectTransform>().localScale = new Vector3(1,1,1);
-        if(completionIndex>=2)
+        if(completionIndex>=4)
         {
             infPanel.SetActive(false);
         }

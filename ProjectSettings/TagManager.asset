@@ -27,6 +27,8 @@ TagManager:
   - RotationTracker
   - FirstAid
   - CannedFood
+  - Pills
+  - Bottle
   layers:
   - Default
   - TransparentFX

@@ -20,7 +20,9 @@ public class Item : ScriptableObject
       Knife,
       Key,
       FirstAid,
-      CannedFood
+      CannedFood,
+      Pills,
+      Bottle
 
    }
 }
