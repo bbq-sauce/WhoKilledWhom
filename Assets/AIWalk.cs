@@ -16,6 +16,9 @@ public class AIWalk : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        navMeshAgent.SetDestination(player.transform.position);
+        if(navMeshAgent.enabled)
+        {
+            navMeshAgent.SetDestination(player.transform.position);
+        }
     }
 }

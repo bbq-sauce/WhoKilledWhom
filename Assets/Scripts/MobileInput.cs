@@ -77,7 +77,7 @@ public class MobileInput : MonoBehaviour
                         {
                             SceneManager.LoadScene(doorNum);
                         }
-                        if(SceneManager.GetActiveScene().buildIndex == 2 && InventoryManager.itemCount == 4)
+                        if(SceneManager.GetActiveScene().buildIndex == 2 && InventoryManager.itemCount >= 4)
                         {
                             mobile.SetActive(true);
                             infPanel.SetActive(true);
@@ -112,7 +112,7 @@ public class MobileInput : MonoBehaviour
                         {
                             SceneManager.LoadScene(doorNum);
                         }
-                        if(SceneManager.GetActiveScene().buildIndex == 2 && InventoryManager.itemCount == 4)
+                        if(SceneManager.GetActiveScene().buildIndex == 2 && InventoryManager.itemCount >= 4)
                         {
                             mobile.SetActive(true);
                             infPanel.SetActive(true);

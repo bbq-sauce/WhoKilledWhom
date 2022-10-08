@@ -20,6 +20,7 @@ public class LookHorror : MonoBehaviour
     public GameObject moveCanvas;
     public GameObject mobileCanvas;
     public GameObject buttons;
+    public GameObject deathPanel;
     // Start is called before the first frame update
     void Start()
     {
@@ -57,6 +58,7 @@ public class LookHorror : MonoBehaviour
                     float percentageCompleted = elapsedTime/desiredDuration;
                     ghost.transform.position = Vector3.Lerp(ghost.transform.position,playerTracker.transform.position,percentageCompleted);
                     player.GetComponent<FirstPersonController>().enabled = false;
+                    deathPanel.SetActive(true);
                     moveCanvas.SetActive(false);
                     mobileCanvas.SetActive(false);
                     deadAnim.SetTrigger("DeadAnim");

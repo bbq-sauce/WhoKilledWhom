@@ -8,12 +8,14 @@ public class SaveProgress : MonoBehaviour
     public GameObject audioManager;
     public GameObject inventoryManager;
     public GameObject child;
+    public GameObject parentDontDestroy;
     
     void Start()
     {
-        DontDestroyOnLoad(gameObject);
-        DontDestroyOnLoad(audioManager);
-        DontDestroyOnLoad(inventoryManager);
+        DontDestroyOnLoad(parentDontDestroy);
+        // DontDestroyOnLoad(gameObject);
+        // DontDestroyOnLoad(audioManager);
+        // DontDestroyOnLoad(inventoryManager);
     }
 
     void Update()

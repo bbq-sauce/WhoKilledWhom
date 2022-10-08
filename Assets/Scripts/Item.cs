@@ -18,6 +18,9 @@ public class Item : ScriptableObject
       FamilyPhoto,
       Journel,
       Knife,
-      Key
+      Key,
+      FirstAid,
+      CannedFood
+
    }
 }

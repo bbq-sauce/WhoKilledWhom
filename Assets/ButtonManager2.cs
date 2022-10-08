@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ButtonManager2 : MonoBehaviour
 {
+    public GameObject destroyDontDestroy;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,11 +20,14 @@ public class ButtonManager2 : MonoBehaviour
 
     public void Restart()
     {
+        Destroy(destroyDontDestroy);
         SceneManager.LoadScene(1);
+        
     }
 
     public void TitleScreen()
     {
+        Destroy(destroyDontDestroy);
         SceneManager.LoadScene(0);
     }
 }

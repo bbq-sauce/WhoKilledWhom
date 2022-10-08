@@ -25,6 +25,8 @@ TagManager:
   - TL
   - TR
   - RotationTracker
+  - FirstAid
+  - CannedFood
   layers:
   - Default
   - TransparentFX

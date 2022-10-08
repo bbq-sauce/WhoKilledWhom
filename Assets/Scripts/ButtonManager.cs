@@ -43,6 +43,22 @@ public class ButtonManager : MonoBehaviour
         buttonText.enabled = true;
     }
 
+    public void RemoveAid()
+    {
+        animator.SetTrigger("RemoveAid");
+        mobileButton.GetComponent<Button>().enabled = true;
+        mobileButton.GetComponent<Image>().enabled = true;
+        buttonText.enabled = true;
+    }
+
+    public void RemoveCan()
+    {
+        animator.SetTrigger("RemoveCan");
+        mobileButton.GetComponent<Button>().enabled = true;
+        mobileButton.GetComponent<Image>().enabled = true;
+        buttonText.enabled = true;
+    }
+
     public void RemoveKnife()
     {
         animator.SetTrigger("RemoveKnife");

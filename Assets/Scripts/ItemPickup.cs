@@ -18,7 +18,14 @@ public class ItemPickup : MonoBehaviour
     {
         InventoryManager.instance.Add(item);
         icon.SetActive(true);
-        inference.SetActive(true);
+        try{
+            inference.SetActive(true);
+        }
+        catch
+        {
+            
+        }
+        
         Destroy(gameObject);
     }
 
