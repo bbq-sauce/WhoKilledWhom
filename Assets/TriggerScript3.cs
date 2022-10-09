@@ -39,7 +39,6 @@ public class TriggerScript3 : MonoBehaviour
     {
         StartCoroutine(End());
         horrorEndAnim.enabled = true;
-        martha.GetComponent<Animator>().enabled = false;
         martha.SetActive(true);
         
     }
