@@ -29,6 +29,10 @@ TagManager:
   - CannedFood
   - Pills
   - Bottle
+  - KeroseneCan
+  - Sponge
+  - Towel
+  - DontDestroy
   layers:
   - Default
   - TransparentFX

@@ -75,6 +75,30 @@ public class ButtonManager : MonoBehaviour
         buttonText.enabled = true;
     }
 
+    public void RemoveKeroseneCan()
+    {
+        animator.SetTrigger("RemoveKerosene");
+        mobileButton.GetComponent<Button>().enabled = true;
+        mobileButton.GetComponent<Image>().enabled = true;
+        buttonText.enabled = true;
+    }
+
+    public void RemoveSponge()
+    {
+        animator.SetTrigger("RemoveSponge");
+        mobileButton.GetComponent<Button>().enabled = true;
+        mobileButton.GetComponent<Image>().enabled = true;
+        buttonText.enabled = true;
+    }
+
+    public void RemoveTowel()
+    {
+        animator.SetTrigger("RemoveTowel");
+        mobileButton.GetComponent<Button>().enabled = true;
+        mobileButton.GetComponent<Image>().enabled = true;
+        buttonText.enabled = true;
+    }
+
     public void RemoveKnife()
     {
         animator.SetTrigger("RemoveKnife");

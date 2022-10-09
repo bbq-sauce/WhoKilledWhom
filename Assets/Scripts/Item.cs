@@ -22,7 +22,10 @@ public class Item : ScriptableObject
       FirstAid,
       CannedFood,
       Pills,
-      Bottle
+      Bottle,
+      KeroseneCan,
+      Sponge,
+      BloodyTowel
 
    }
 }

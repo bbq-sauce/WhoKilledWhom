@@ -96,6 +96,30 @@ public class InventoryItemController : MonoBehaviour
                 buttonText.enabled = false;
                 isShowing = !isShowing;
                 break;
+            case Item.ItemType.KeroseneCan:
+                animator.SetTrigger("ShowKerosene");
+                mobile.SetActive(false);
+                mobileButton.GetComponent<Button>().enabled = false;
+                mobileButton.GetComponent<Image>().enabled = false;
+                buttonText.enabled = false;
+                isShowing = !isShowing;
+                break;    
+            case Item.ItemType.Sponge:
+                animator.SetTrigger("ShowSponge");
+                mobile.SetActive(false);
+                mobileButton.GetComponent<Button>().enabled = false;
+                mobileButton.GetComponent<Image>().enabled = false;
+                buttonText.enabled = false;
+                isShowing = !isShowing;
+                break;
+            case Item.ItemType.BloodyTowel:
+                animator.SetTrigger("ShowTowel");
+                mobile.SetActive(false);
+                mobileButton.GetComponent<Button>().enabled = false;
+                mobileButton.GetComponent<Image>().enabled = false;
+                buttonText.enabled = false;
+                isShowing = !isShowing;
+                break;    
             case Item.ItemType.Knife:
                 animator.SetTrigger("ShowKnife");
                 mobile.SetActive(false);

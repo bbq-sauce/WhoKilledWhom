@@ -16,7 +16,7 @@ public class Dont1 : MonoBehaviour
         mobile = GameObject.FindGameObjectWithTag("Mobile");
         disableIndex++;
         gameObject.transform.parent = parentObject.transform;
-        if(disableIndex>=4)
+        if(disableIndex>=7)
         {
             mobile.SetActive(false);
         }

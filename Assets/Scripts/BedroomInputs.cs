@@ -37,19 +37,19 @@ public class BedroomInputs : MonoBehaviour
             {
                 if((hit.collider != null) && hit.transform.gameObject.tag == "Door")
                 {
-                        if(!isOpened  && InventoryManager.itemCount == 8)
+                        if(!isOpened  && InventoryManager.itemCount >= 10)
                         {
                             doorAnim.SetTrigger("DoorOpen");
                             audioSource.PlayOneShot(doorOpen);
                             isOpened = !isOpened;
                         }
-                        else if(isOpened  && InventoryManager.itemCount == 8)
+                        else if(isOpened  && InventoryManager.itemCount >= 10)
                         {
                             doorAnim.SetTrigger("DoorClose");
                             audioSource.PlayOneShot(doorClose);
                             isOpened = !isOpened;
                         }
-                        else if(InventoryManager.itemCount < 8)
+                        else if(InventoryManager.itemCount < 10)
                         {
                             doorAnim.SetTrigger("Locked");
                             audioSource.PlayOneShot(doorLocked);
@@ -73,19 +73,19 @@ public class BedroomInputs : MonoBehaviour
             {
                 if((hit.collider != null) && hit.transform.gameObject.tag == "Door")
                 {
-                       if(!isOpened  && InventoryManager.itemCount == 8)
+                       if(!isOpened  && InventoryManager.itemCount >= 10)
                         {
                             doorAnim.SetTrigger("DoorOpen");
                             audioSource.PlayOneShot(doorOpen);
                             isOpened = !isOpened;
                         }
-                        else if(isOpened  && InventoryManager.itemCount == 8)
+                        else if(isOpened  && InventoryManager.itemCount >= 10)
                         {
                             doorAnim.SetTrigger("DoorClose");
                             audioSource.PlayOneShot(doorClose);
                             isOpened = !isOpened;
                         }
-                        else if(InventoryManager.itemCount < 8)
+                        else if(InventoryManager.itemCount < 10)
                         {
                             doorAnim.SetTrigger("Locked");
                             audioSource.PlayOneShot(doorLocked);
